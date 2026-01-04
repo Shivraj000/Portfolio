@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+     <div style="
+    width:160px;
+    height:160px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    padding:4px;
+    background:linear-gradient(135deg, #38bdf8, #8b5cf6, #ec4899);
+    box-shadow:0 0 30px rgba(139,92,246,0.6);
+    transition:all 0.4s ease;"
+    onmouseover="this.style.transform='scale(1.08)'; this.style.boxShadow='0 0 45px rgba(236,72,153,0.9)'"
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 30px rgba(139,92,246,0.6)'">
+
+    <img src="./assets/face.jpeg"
+         alt="Profile Photo"
+         style="
+           width:100%;
+           height:100%;
+           border-radius:50%;
+           object-fit:cover;
+           border:4px solid #0f172a;">
+  </div>
+
+  <!-- Name -->
+  <h1 style="
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:8px;
+    background:linear-gradient(90deg, #38bdf8, #a78bfa, #ec4899);
+    background-size:200% auto;
+    color:transparent;
+    background-clip:text;
+    -webkit-background-clip:text;
+    animation:shine 4s linear infinite;
+    text-shadow:0 0 20px rgba(139,92,246,0.35);
+  ">
+    Shivraj
+  </h1>
+
+  <!-- Title -->
+  <h2 style="
+    font-size:16px;
+    font-weight:500;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#9ca3af;
+    position:relative;
+    display:inline-block;
+  ">
+    <span style="
+      background:linear-gradient(90deg, #22d3ee, #8b5cf6);
+      color:transparent;
+      background-clip:text;
+      -webkit-background-clip:text;
+      animation:pulse 2.5s ease-in-out infinite;
+    ">
+      Web Developer
+    </span>
+  </h2>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:amshivraj2002@gmail.com" class="contact-link">amshivraj2002@example.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 9334161716</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-12-13">December 13, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Greater Noida, Uttar Pradesh</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Social Links -->
+<div style="
+  margin-top:40px;
+  text-align:center;
+  padding:20px;
+">
+  <div style="
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+  ">
+
+    <!-- GitHub -->
+    <a href="https://github.com/Shivraj000"
+       target="_blank"
+       style="
+         display:inline-flex;
+         align-items:center;
+         gap:10px;
+         padding:14px 22px;
+         border-radius:40px;
+         background:linear-gradient(135deg, #1f2933, #0f172a);
+         color:#e5e7eb;
+         font-size:15px;
+         font-weight:500;
+         text-decoration:none;
+         box-shadow:0 10px 25px rgba(0,0,0,0.4);
+         transition:all 0.3s ease;"
+       onmouseover="this.style.transform='translateY(-4px)'"
+       onmouseout="this.style.transform='translateY(0)'">
+
+      <!-- GitHub Logo -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="22" height="22" viewBox="0 0 24 24"
+           fill="#e5e7eb">
+        <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.45 7.86 10.98.58.11.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.2 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0023.5 12.02C23.5 5.74 18.27.5 12 .5z"/>
+      </svg>
+
+      <span>GitHub</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/shivraj-9282bb250/"
+       target="_blank"
+       style="
+         display:inline-flex;
+         align-items:center;
+         gap:10px;
+         padding:14px 22px;
+         border-radius:40px;
+         background:linear-gradient(135deg, #0a66c2, #004182);
+         color:#ffffff;
+         font-size:15px;
+         font-weight:500;
+         text-decoration:none;
+         box-shadow:0 10px 25px rgba(0,0,0,0.4);
+         transition:all 0.3s ease;"
+       onmouseover="this.style.transform='translateY(-4px)'"
+       onmouseout="this.style.transform='translateY(0)'">
+
+      <!-- LinkedIn Logo -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="22" height="22" viewBox="0 0 24 24"
+           fill="#ffffff">
+        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.09h4.56V24H.22V8.09zM8.09 8.09h4.37v2.17h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V24h-4.56v-7.92c0-1.89-.03-4.32-2.63-4.32-2.63 0-3.04 2.05-3.04 4.18V24H8.09V8.09z"/>
+      </svg>
+
+      <span>LinkedIn</span>
+    </a>
+
+  </div>
+</div>
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+         
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+        <p>
+  I’m Shivraj, an aspiring Software Developer with a strong interest in web development and modern UI design.
+  I enjoy turning ideas and real-world problems into clean, simple, and user-friendly digital experiences.
+</p>
+
+<p>
+  My focus is on building websites and applications that are functional, easy to use, and visually appealing.
+  I like adding a personal touch to my projects while keeping performance and usability in mind.
+  I’m continuously learning new technologies and improving my skills to create meaningful and impactful solutions.
+</p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                High-quality development of websites with a focus on functionality and clean design.
+
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                 <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                High-quality development of websites with a focus on functionality and clean design.
+                </p>
+              </div>
+
+            </li>
+
+      <li class="service-item">
+
+  <div class="service-icon-box">
+    <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+  </div>
+
+  <div class="service-content-box">
+    <h4 class="h4 service-item-title">Data Structures & Algorithms</h4>
+
+    <p class="service-item-text">
+      Solving problems using efficient data structures and algorithms to build strong logical and analytical skills.
+    </p>
+  </div>
+
+</li>
+
+<li class="service-item">
+
+  <div class="service-icon-box">
+     <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+  </div>
+
+  <div class="service-content-box">
+    <h4 class="h4 service-item-title">Backend Development</h4>
+
+    <p class="service-item-text">
+      Developing secure and scalable backend systems using server-side technologies and databases.
+    </p>
+  </div>
+
+</li>
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+       
+          <section class="testimonials" style="padding:40px 20px;">
+
+  <h3 class="h3 testimonials-title"
+      style="
+        text-align:center;
+        margin-bottom:30px;
+        font-weight:700;
+        letter-spacing:1px;
+        background:linear-gradient(90deg,#6ee7ff,#a78bfa);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+      ">
+    My Core Skills
+  </h3>
+
+  <ul class="testimonials-list has-scrollbar"
+      style="
+        display:flex;
+        gap:24px;
+        padding-bottom:20px;
+        overflow-x:auto;
+        scroll-snap-type:x mandatory;
+      ">
+
+    <!-- CARD 1 -->
+    <li class="testimonials-item" style="min-width:320px; scroll-snap-align:start;">
+      <div class="content-card"
+           style="
+             height:260px;
+             padding:24px;
+             border-radius:20px;
+             background:rgba(255,255,255,0.08);
+             backdrop-filter:blur(12px);
+             border:1px solid rgba(255,255,255,0.15);
+             box-shadow:0 10px 30px rgba(0,0,0,0.25);
+             overflow:hidden;
+             transition:transform 0.3s ease, box-shadow 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-6px)';
+             this.querySelector('.text-inner').style.transform='translateY(-80px)';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.querySelector('.text-inner').style.transform='translateY(0)';
+           ">
+
+        <h4 style="margin-bottom:12px;color:#e9d5ff;font-weight:600;">
+          Data Structures & Algorithms
+        </h4>
+
+        <div class="testimonials-text"
+             style="height:160px; overflow:hidden; position:relative;">
+          <div class="text-inner"
+               style="
+                 transition:transform 4s linear;
+                 color:#d1d5db;
+                 line-height:1.7;
+               ">
+            <p>
+              Practicing data structures and algorithms to improve problem-solving,
+              logical thinking, and coding efficiency. Regular practice builds strong
+              fundamentals, improves time complexity understanding, and prepares for
+              real-world problem solving and interviews.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <!-- CARD 2 -->
+    <li class="testimonials-item" style="min-width:320px; scroll-snap-align:start;">
+      <div class="content-card"
+           style="
+             height:260px;
+             padding:24px;
+             border-radius:20px;
+             background:rgba(255,255,255,0.08);
+             backdrop-filter:blur(12px);
+             border:1px solid rgba(255,255,255,0.15);
+             box-shadow:0 10px 30px rgba(0,0,0,0.25);
+             overflow:hidden;
+             transition:transform 0.3s ease, box-shadow 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-6px)';
+             this.querySelector('.text-inner').style.transform='translateY(-80px)';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.querySelector('.text-inner').style.transform='translateY(0)';
+           ">
+
+        <h4 style="margin-bottom:12px;color:#e9d5ff;font-weight:600;">
+          Backend Development
+        </h4>
+
+        <div class="testimonials-text"
+             style="height:160px; overflow:hidden; position:relative;">
+          <div class="text-inner"
+               style="
+                 transition:transform 4s linear;
+                 color:#d1d5db;
+                 line-height:1.7;
+               ">
+            <p>
+              Learning to build backend systems, develop RESTful APIs, manage business
+              logic, authentication, database interactions, and write secure, scalable
+              server-side code following best practices.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <!-- CARD 3 -->
+    <li class="testimonials-item" style="min-width:320px; scroll-snap-align:start;">
+      <div class="content-card"
+           style="
+             height:260px;
+             padding:24px;
+             border-radius:20px;
+             background:rgba(255,255,255,0.08);
+             backdrop-filter:blur(12px);
+             border:1px solid rgba(255,255,255,0.15);
+             box-shadow:0 10px 30px rgba(0,0,0,0.25);
+             overflow:hidden;
+             transition:transform 0.3s ease, box-shadow 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-6px)';
+             this.querySelector('.text-inner').style.transform='translateY(-80px)';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.querySelector('.text-inner').style.transform='translateY(0)';
+           ">
+
+        <h4 style="margin-bottom:12px;color:#e9d5ff;font-weight:600;">
+          Hands-on Projects
+        </h4>
+
+        <div class="testimonials-text"
+             style="height:160px; overflow:hidden; position:relative;">
+          <div class="text-inner"
+               style="
+                 transition:transform 4s linear;
+                 color:#d1d5db;
+                 line-height:1.7;
+               ">
+            <p>
+              Gaining practical experience by building academic and personal projects,
+              implementing real-world features, debugging issues, and understanding how
+              production-level applications are designed.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <!-- CARD 4 -->
+    <li class="testimonials-item" style="min-width:320px; scroll-snap-align:start;">
+      <div class="content-card"
+           style="
+             height:260px;
+             padding:24px;
+             border-radius:20px;
+             background:rgba(255,255,255,0.08);
+             backdrop-filter:blur(12px);
+             border:1px solid rgba(255,255,255,0.15);
+             box-shadow:0 10px 30px rgba(0,0,0,0.25);
+             overflow:hidden;
+             transition:transform 0.3s ease, box-shadow 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-6px)';
+             this.querySelector('.text-inner').style.transform='translateY(-80px)';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.querySelector('.text-inner').style.transform='translateY(0)';
+           ">
+
+        <h4 style="margin-bottom:12px;color:#e9d5ff;font-weight:600;">
+          Continuous Learning
+        </h4>
+
+        <div class="testimonials-text"
+             style="height:160px; overflow:hidden; position:relative;">
+          <div class="text-inner"
+               style="
+                 transition:transform 4s linear;
+                 color:#d1d5db;
+                 line-height:1.7;
+               ">
+            <p>
+              Continuously improving skills by learning new technologies, refactoring
+              code, following best practices, and staying updated with industry trends
+              and modern development tools.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+      
+
+
+        <!--
+          - clients
+        -->
+  <section class="clients" style="margin-top:50px;">
+
+  <h3
+    style="
+      text-align:center;
+      margin-bottom:32px;
+      font-weight:700;
+      font-size:22px;
+      letter-spacing:0.8px;
+      color:#e5e7eb;
+    ">
+    Projects & Technologies
+  </h3>
+
+  <ul
+    style="
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:22px;
+      padding:0;
+      list-style:none;
+    ">
+
+    <!-- CARD -->
+    <li style="width:220px;">
+      <div
+        style="
+          padding:22px 18px;
+          border-radius:16px;
+          background:rgba(255,255,255,0.06);
+          border:1px solid rgba(255,255,255,0.12);
+          backdrop-filter:blur(10px);
+          text-align:center;
+          transition:transform 0.3s ease, box-shadow 0.3s ease;
+        "
+        onmouseover="
+          this.style.transform='translateY(-6px)';
+          this.style.boxShadow='0 12px 24px rgba(0,0,0,0.25)';
+        "
+        onmouseout="
+          this.style.transform='none';
+          this.style.boxShadow='none';
+        ">
+        <p style="font-size:15px;font-weight:600;color:#f3f4f6;">
+          Java Backend Development
+        </p>
+      </div>
+    </li>
+
+    <!-- CARD -->
+    <li style="width:220px;">
+      <div
+        style="
+          padding:22px 18px;
+          border-radius:16px;
+          background:rgba(255,255,255,0.06);
+          border:1px solid rgba(255,255,255,0.12);
+          backdrop-filter:blur(10px);
+          text-align:center;
+          transition:transform 0.3s ease, box-shadow 0.3s ease;
+        "
+        onmouseover="
+          this.style.transform='translateY(-6px)';
+          this.style.boxShadow='0 12px 24px rgba(0,0,0,0.25)';
+        "
+        onmouseout="
+          this.style.transform='none';
+          this.style.boxShadow='none';
+        ">
+        <p style="font-size:15px;font-weight:600;color:#f3f4f6;">
+          REST API Development
+        </p>
+      </div>
+    </li>
+
+    <!-- CARD -->
+    <li style="width:220px;">
+      <div
+        style="
+          padding:22px 18px;
+          border-radius:16px;
+          background:rgba(255,255,255,0.06);
+          border:1px solid rgba(255,255,255,0.12);
+          backdrop-filter:blur(10px);
+          text-align:center;
+          transition:transform 0.3s ease, box-shadow 0.3s ease;
+        "
+        onmouseover="
+          this.style.transform='translateY(-6px)';
+          this.style.boxShadow='0 12px 24px rgba(0,0,0,0.25)';
+        "
+        onmouseout="
+          this.style.transform='none';
+          this.style.boxShadow='none';
+        ">
+        <p style="font-size:15px;font-weight:600;color:#f3f4f6;">
+          SQL & Database Management
+        </p>
+      </div>
+    </li>
+
+    <!-- CARD -->
+    <li style="width:220px;">
+      <div
+        style="
+          padding:22px 18px;
+          border-radius:16px;
+          background:rgba(255,255,255,0.06);
+          border:1px solid rgba(255,255,255,0.12);
+          backdrop-filter:blur(10px);
+          text-align:center;
+          transition:transform 0.3s ease, box-shadow 0.3s ease;
+        "
+        onmouseover="
+          this.style.transform='translateY(-6px)';
+          this.style.boxShadow='0 12px 24px rgba(0,0,0,0.25)';
+        "
+        onmouseout="
+          this.style.transform='none';
+          this.style.boxShadow='none';
+        ">
+        <p style="font-size:15px;font-weight:600;color:#f3f4f6;">
+          Data Structures & Algorithms
+        </p>
+      </div>
+    </li>
+
+    <!-- CARD -->
+    <li style="width:220px;">
+      <div
+        style="
+          padding:22px 18px;
+          border-radius:16px;
+          background:rgba(255,255,255,0.06);
+          border:1px solid rgba(255,255,255,0.12);
+          backdrop-filter:blur(10px);
+          text-align:center;
+          transition:transform 0.3s ease, box-shadow 0.3s ease;
+        "
+        onmouseover="
+          this.style.transform='translateY(-6px)';
+          this.style.boxShadow='0 12px 24px rgba(0,0,0,0.25)';
+        "
+        onmouseout="
+          this.style.transform='none';
+          this.style.boxShadow='none';
+        ">
+        <p style="font-size:15px;font-weight:600;color:#f3f4f6;">
+          Academic & Personal Projects
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="book-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Education</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Bachelor of Technology in Information Technology, Noida Institute of Engineering and Technology, Greater Noida, India</h4>
+      <span>2022 — 2026</span>
+      <p class="timeline-text">GPA: 7.2</p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Senior Secondary, Satyam International School, Patna, India</h4>
+      <span>2020 — 2021</span>
+      <p class="timeline-text">GPA: 8.3</p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Secondary School, DR. G.L. DUTTA D.A.V. Public School, Patna, India</h4>
+      <span>2019 — 2020</span>
+      <p class="timeline-text">GPA: 8.8</p>
+    </li>
+  </ol>
+</section>
+
+
+      <section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="book-outline"></ion-icon>
+    </div>
+    <h3 class="h3">Experience</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Internshala</h4>
+      <span>Aug '23 — Sep '23</span>
+      <p class="timeline-text">
+        Greater Noida, India<br>
+        Completed an 8-week training in Core Java with AI, covering modules on Java fundamentals, basic concepts, object-oriented programming (OOP), and Java application development.<br>
+        Developed hands-on projects demonstrating practical application of Java concepts.<br>
+        Achieved 84% in the final assessment.<br>
+        Strengthened problem-solving and debugging skills through coding challenges and assignments.<br>
+        Gained familiarity with Java development tools (JDK, JRE, and IDEs such as Eclipse/IntelliJ).
+      </p>
+    </li>
+  </ol>
+</section>
+
+
+     <section class="skill" style="padding: 2rem; background: linear-gradient(135deg, #0d1117, #1a1f29); border-radius: 15px; max-width: 900px; margin: auto; color: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
+  <h3 style="text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #00e5ff; text-shadow: 1px 1px 5px #000;">My Skills</h3>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+    <div style="background: #161b22; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; text-align: center; transition: transform 0.3s; cursor: default;">
+      <h5 style="margin-bottom: 0.5rem; color: #00e5ff;">Programming</h5>
+      <p style="font-size: 0.9rem; color: #cfd8dc;">JavaScript, C++, Java</p>
+    </div>
+
+    <div style="background: #161b22; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; text-align: center; transition: transform 0.3s; cursor: default;">
+      <h5 style="margin-bottom: 0.5rem; color: #ff6ec7;">Development Tools</h5>
+      <p style="font-size: 0.9rem; color: #cfd8dc;">VS Code, Postman, REST APIs, Vite, CLI</p>
+    </div>
+
+    <div style="background: #161b22; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; text-align: center; transition: transform 0.3s; cursor: default;">
+      <h5 style="margin-bottom: 0.5rem; color: #00ff9e;">Frameworks</h5>
+      <p style="font-size: 0.9rem; color: #cfd8dc;">Node.js, React.js, Express.js, Socket.io, DaisyUI, Zustand</p>
+    </div>
+
+    <div style="background: #161b22; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; text-align: center; transition: transform 0.3s; cursor: default;">
+      <h5 style="margin-bottom: 0.5rem; color: #ffca00;">Databases</h5>
+      <p style="font-size: 0.9rem; color: #cfd8dc;">MongoDB, MySQL</p>
+    </div>
+
+    <div style="background: #161b22; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; text-align: center; transition: transform 0.3s; cursor: default;">
+      <h5 style="margin-bottom: 0.5rem; color: #ff4d4d;">Version Control</h5>
+      <p style="font-size: 0.9rem; color: #cfd8dc;">Git, GitHub</p>
+    </div>
+  </div>
+
+  <script>
+    // Optional hover effect for cards
+    const cards = document.querySelectorAll('.skill div[style*="min-width"]');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-5px)');
+      card.addEventListener('mouseleave', () => card.style.transform = 'translateY(0)');
+    });
+  </script>
+</section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section style="padding:40px; background:#0f172a; border-radius:16px;">
+
+  <h3 style="
+    color:#e5e7eb;
+    font-size:26px;
+    margin-bottom:30px;
+    text-align:center;
+    letter-spacing:1px;">
+    Web Development Projects
+  </h3>
+
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:24px;">
+
+    <!-- Project 1 -->
+    <a href="https://yappin-crog.onrender.com/"
+       target="_blank"
+       style="text-decoration:none;">
+      <div style="
+        background:rgba(255,255,255,0.05);
+        backdrop-filter:blur(10px);
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 10px 30px rgba(0,0,0,0.4);
+        transition:all 0.3s ease;
+        cursor:pointer;"
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.4)'">
+
+        <img src="./assets/images/yappin.png"
+             alt="Yappin"
+             style="width:100%; height:180px; object-fit:cover;">
+
+        <div style="padding:18px;">
+          <h4 style="color:#f9fafb; font-size:18px; margin-bottom:8px;">
+            Yappin
+          </h4>
+          <p style="color:#9ca3af; font-size:14px; line-height:1.5;">
+            A modern web-based communication platform built using full-stack technologies.
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 2 -->
+    <a href="https://shivraj000.github.io/MovieDrift/"
+       target="_blank"
+       style="text-decoration:none;">
+      <div style="
+        background:rgba(255,255,255,0.05);
+        backdrop-filter:blur(10px);
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 10px 30px rgba(0,0,0,0.4);
+        transition:all 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-8px)'"
+        onmouseout="this.style.transform='translateY(0)'">
+
+        <img src="./assets/images/movie.png"
+             alt="MovieDrift"
+             style="width:100%; height:180px; object-fit:cover;">
+
+        <div style="padding:18px;">
+          <h4 style="color:#f9fafb; font-size:18px; margin-bottom:8px;">
+            MovieDrift
+          </h4>
+          <p style="color:#9ca3af; font-size:14px;">
+            A movie discovery web app with dynamic UI, API integration, and clean UX.
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="https://shivraj000.github.io/Zombie-killing-game/"
+       target="_blank"
+       style="text-decoration:none;">
+      <div style="
+        background:rgba(255,255,255,0.05);
+        backdrop-filter:blur(10px);
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 10px 30px rgba(0,0,0,0.4);
+        transition:all 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-8px)'"
+        onmouseout="this.style.transform='translateY(0)'">
+
+        <img src="./assets/images/zombie.png"
+             alt="Zombie 3D Game"
+             style="width:100%; height:180px; object-fit:cover;">
+
+        <div style="padding:18px;">
+          <h4 style="color:#f9fafb; font-size:18px; margin-bottom:8px;">
+            Zombie 3D Game
+          </h4>
+          <p style="color:#9ca3af; font-size:14px;">
+            A browser-based 3D zombie game using interactive web technologies.
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 4 -->
+    <a href="https://shivraj000.github.io/Puzzle-Game/"
+       target="_blank"
+       style="text-decoration:none;">
+      <div style="
+        background:rgba(255,255,255,0.05);
+        backdrop-filter:blur(10px);
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 10px 30px rgba(0,0,0,0.4);
+        transition:all 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-8px)'"
+        onmouseout="this.style.transform='translateY(0)'">
+
+        <img src="./assets/images/puzzle.png"
+             alt="Puzzle Game"
+             style="width:100%; height:180px; object-fit:cover;">
+
+        <div style="padding:18px;">
+          <h4 style="color:#f9fafb; font-size:18px; margin-bottom:8px;">
+            Puzzle Game
+          </h4>
+          <p style="color:#9ca3af; font-size:14px;">
+            A logic-based puzzle game built with smooth animations and clean UI.
+          </p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  <!-- More Projects GitHub Link -->
+<div style="
+  margin-top:40px;
+  text-align:center;
+  padding:20px;
+">
+  <a href="https://github.com/Shivraj000"
+     target="_blank"
+     style="
+       display:inline-flex;
+       align-items:center;
+       gap:12px;
+       padding:14px 24px;
+       border-radius:40px;
+       background:linear-gradient(135deg, #1f2933, #0f172a);
+       color:#e5e7eb;
+       font-size:15px;
+       font-weight:500;
+       text-decoration:none;
+       box-shadow:0 10px 25px rgba(0,0,0,0.4);
+       transition:all 0.3s ease;"
+     onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 18px 35px rgba(0,0,0,0.6)'"
+     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.4)'">
+
+    <!-- GitHub Logo -->
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="22" height="22" viewBox="0 0 24 24"
+         fill="#e5e7eb">
+      <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.45 7.86 10.98.58.11.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.27 5.69.41.35.78 1.04.78 2.1v3.12c0 .31.21.68.8.56A11.52 11.52 0 0023.5 12.02C23.5 5.74 18.27.5 12 .5z"/>
+    </svg>
+
+    <span>For more projects, please visit my GitHub</span>
+  </a>
+</div>
+
+</section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+    
+
+
+
+
+      <
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+       <section class="mapbox" data-mapbox>
+  <figure>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923361873!2d77.29174228359375!3d28.474387999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1e6f5d8c7f1%3A0x6c0b1e4e9d2c9b4!2sGreater%20Noida%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1702570000000"
+      width="400"
+      height="300"
+      loading="lazy">
+    </iframe>
+  </figure>
+</section>
+
+    <section class="contact-form" style="display:flex; justify-content:center;">
+
+  <div
+    style="
+      position: relative;
+      max-width: 520px;
+      width: 100%;
+      padding: 36px 38px;
+      border-radius: 22px;
+      text-align: center;
+
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
+        linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+      backdrop-filter: blur(12px);
+
+      box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45),
+        0 0 45px rgba(0, 255, 255, 0.25);
+
+      animation:
+        fadeSlideIn 1s ease forwards,
+        floatCard 6s ease-in-out infinite,
+        glowPulse 4s ease-in-out infinite;
+
+      opacity: 0;
+      transform: translateY(30px);
+
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    "
+
+    onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 35px 80px rgba(0,0,0,0.6), 0 0 80px rgba(0,255,255,0.7)'"
+    onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 25px 60px rgba(0,0,0,0.45), 0 0 45px rgba(0,255,255,0.25)'"
+  >
+
+    <!-- TEXT -->
+    <p
+      style="
+        font-size: 18px;
+        font-weight: 500;
+        color: #e9fbff;
+        margin-bottom: 22px;
+        line-height: 1.6;
+        letter-spacing: 0.6px;
+
+        animation: textFade 1.2s ease forwards;
+      "
+    >
+      Open to collaborations, internships, and exciting projects.
+    </p>
+
+    <!-- EMAIL -->
+    <a
+      href="mailto:amshivraj2002@gmail.com"
+      style="
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+
+        font-size: 18px;
+        font-weight: 600;
+        color: #00ffff;
+        text-decoration: none;
+
+        padding: 14px 28px;
+        border-radius: 999px;
+
+        background: rgba(0, 255, 255, 0.12);
+
+        box-shadow:
+          inset 0 0 14px rgba(0,255,255,0.35),
+          0 0 20px rgba(0,255,255,0.25);
+
+        animation: emailPulse 3s ease-in-out infinite;
+        transition: all 0.35s ease;
+      "
+
+      onmouseover="this.style.color='#ffffff'; this.style.background='rgba(0,255,255,0.25)'; this.style.boxShadow='inset 0 0 20px rgba(0,255,255,0.6), 0 0 40px rgba(0,255,255,0.6)'"
+      onmouseout="this.style.color='#00ffff'; this.style.background='rgba(0,255,255,0.12)'; this.style.boxShadow='inset 0 0 14px rgba(0,255,255,0.35), 0 0 20px rgba(0,255,255,0.25)'"
+    >
+      📩 amshivraj2002@gmail.com
+    </a>
+
+    <!-- INLINE KEYFRAMES -->
+    <style>
+      @keyframes fadeSlideIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatCard {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+
+      @keyframes glowPulse {
+        0%, 100% {
+          box-shadow:
+            0 25px 60px rgba(0,0,0,0.45),
+            0 0 45px rgba(0,255,255,0.25);
+        }
+        50% {
+          box-shadow:
+            0 30px 70px rgba(0,0,0,0.55),
+            0 0 70px rgba(0,255,255,0.55);
+        }
+      }
+
+      @keyframes emailPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+
+      @keyframes textFade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+
+  </div>
+
+</section>
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
