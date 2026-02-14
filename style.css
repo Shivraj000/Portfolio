@@ -1834,16 +1834,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   border:4px solid #0f172a;
 }
 
+/* ===== Hide Profile Section on Small Screens ===== */
 @media (max-width: 600px) {
 
+  /* hide profile image */
   .profile-wrapper {
-    width:120px !important;
-    height:120px !important;
-    margin:-60px auto 16px !important;
+    display: none !important;
   }
 
-  .profile-wrapper img {
-    border-width:3px !important;
+  /* hide name */
+  aside.sidebar h1 {
+    display: none !important;
+  }
+
+  /* hide title */
+  aside.sidebar h2 {
+    display: none !important;
   }
 
 }
+
