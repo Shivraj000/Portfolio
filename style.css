@@ -1826,10 +1826,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-@media (max-width: 600px) {
-  .profile-img {
-    width: 140px !important;
-    height: 140px !important;
-    object-fit: cover;
+.profile-img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #0f172a;
+}
+
+/* ✅ Mobile fix */
+@media (max-width:600px){
+  .profile-wrapper{
+    width:120px !important;
+    height:120px !important;
   }
 }
