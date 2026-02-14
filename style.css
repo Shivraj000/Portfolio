@@ -1834,10 +1834,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   border:4px solid #0f172a;
 }
 
-/* ✅ Mobile fix */
-@media (max-width:600px){
-  .profile-wrapper{
+@media (max-width: 600px) {
+
+  .profile-wrapper {
     width:120px !important;
     height:120px !important;
+    margin:-60px auto 16px !important;
   }
+
+  .profile-wrapper img {
+    border-width:3px !important;
+  }
+
 }
