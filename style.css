@@ -1821,10 +1821,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-	 * RESUME
-	 */
+ 
 
   .timeline-text { max-width: 700px; }
 
+}
+@media (max-width: 600px) {
+  .profile-img {
+    width: 140px !important;
+    height: 140px !important;
+    object-fit: cover;
+  }
 }
