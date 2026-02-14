@@ -1894,4 +1894,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+@media screen and (max-width: 480px) {
+
+  /* hide complete profile header card */
+  .sidebar,
+  .sidebar-info,
+  .sidebar-info_more,
+  .avatar-box,
+  .info-content {
+    display: none !important;
+  }
+
+  /* remove extra spacing from main content */
+  .main-content {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+  }
+
+}
+
+
+
 
